@@ -42,3 +42,7 @@ mkdir c:\Temp
 REM Cleanup Recycle Bin storage areas
 del /s /f /q c:\Recycled\*
 del /s /f /q c:\Recycler\*
+
+ 
+REM Cleanup history for current user
+del /s /f /q "%USERPROFILE%"\locals~1\history\*
