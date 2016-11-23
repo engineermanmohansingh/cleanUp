@@ -1,0 +1,7 @@
+REM Cleanup cookies for current user
+del "%USERPROFILE%"\cookies\*.txt
+ 
+REM Cleanup temp directory for current user
+del /s /f /q "%USERPROFILE%"\locals~1\temp\*
+rmdir /s /q "%USERPROFILE%"\locals~1\temp
+mkdir "%USERPROFILE%"\locals~1\Temp
